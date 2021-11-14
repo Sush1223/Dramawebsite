@@ -1,0 +1,346 @@
+<html lang="en">
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Website</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style456.css">
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body>
+
+
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-3 fixed-top">
+        <div class="container">
+            <img src="./img/logo1.png" alt="">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span><i id="bar" class="fas fa-bars"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="shop3.html">Drama</a>
+                    </li>
+                    <li class="nav-item">
+                       <a class="nav-link" href="login.html">Account</a>
+                    </li>
+                    <li class="nav-item">
+                       <a class="nav-link" href="about.html">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        
+                        <i onclick="window.location.href='emptycart2.html';" class="fal fa-shopping-bag"></i>
+
+                    </li>
+
+
+
+
+
+            </div>
+        </div>
+    </nav>
+
+    <div class="container" style="user-select: auto;">
+        <main style="user-select: auto;">
+          <div class="py-5 text-center" style="user-select: auto;">
+           
+            <h2 style="user-select: auto;">Checkout </h2>
+            
+          </div>
+      
+          <div class="row g-5" style="user-select: auto;">
+            <div class="col-md-5 col-lg-4 order-md-last" style="user-select: auto;">
+              <h4 class="d-flex justify-content-between align-items-center mb-3" style="user-select: auto;">
+                <span class="text-primary" style="user-select: auto;">Your cart</span>
+               
+              </h4>
+              <ul class="list-group mb-3" style="user-select: auto;">
+                <li class="list-group-item d-flex justify-content-between lh-sm" style="user-select: auto;">
+                  <div style="user-select: auto;">
+                    <h6 class="my-0" style="user-select: auto;">Dr Stranger</h6>
+                    <small class="text-muted" style="user-select: auto;">Koren (Eng Sub), Korean Drama</small>
+                  </div>
+                  <span class="text-muted" style="user-select: auto;">Rs92</span>
+                </li>
+                
+                
+                <li class="list-group-item d-flex justify-content-between" style="user-select: auto;">
+                   
+                  <span style="user-select: auto;">Total (INR)</span>
+                  
+                  <strong style="user-select: auto;">Rs92</strong>
+                </li>
+              </ul>
+      
+              
+            </div>
+            <div class="col-md-7 col-lg-8" style="user-select: auto;">
+              <h4 class="mb-3" style="user-select: auto;">Billing address</h4>
+              <form class="needs-validation" novalidate=""  style="user-select: auto;" action="ordersuc.html">
+                <div class="row g-3" style="user-select: auto;">
+                  <div class="col-sm-6" style="user-select: auto;">
+                    <label for="firstName" class="form-label" style="user-select: auto;">First name</label>
+                    <input type="text" class="form-control" id="firstName" placeholder="" value="" required="" style="user-select: auto;">
+                    <div class="invalid-feedback" style="user-select: auto;">
+                      Valid first name is required.
+                    </div>
+                  </div>
+      
+                  <div class="col-sm-6" style="user-select: auto;">
+                    <label for="lastName" class="form-label" style="user-select: auto;">Last name</label>
+                    <input type="text" class="form-control" id="lastName" placeholder="" value="" required="" style="user-select: auto;">
+                    <div class="invalid-feedback" style="user-select: auto;">
+                      Valid last name is required.
+                    </div>
+                  </div>
+      
+                  
+      
+                  <div class="col-12" style="user-select: auto;">
+                    <label for="email" class="form-label" style="user-select: auto;">Email <span class="text-muted" style="user-select: auto;"></span></label>
+                    <input type="email" class="form-control" id="email" placeholder="you@example.com" style="user-select: auto;">
+                    <div class="invalid-feedback" style="user-select: auto;">
+                      Please enter a valid email address.
+                    </div>
+                  </div>
+      
+                
+      
+                  
+      
+                  <div class="col-md-5 my-4" style="user-select: auto;">
+                    <label for="country" class="form-label" style="user-select: auto;">Country</label>
+                    <select class="form-select" id="country" required="" style="user-select: auto;">
+                      <option value="" style="user-select: auto;">Choose...</option>
+                      <option style="user-select: auto;">United States</option>
+                      <option style="user-select: auto;">India</option>
+                    </select>
+                    <div class="invalid-feedback" style="user-select: auto;">
+                      Please select a valid country.
+                    </div>
+                  </div>
+      
+                  
+      
+                  
+                </div>
+      
+                <hr class="my-4" style="user-select: auto;">
+      
+                
+      
+                
+      
+               
+      
+                <h4 class="mb-3" style="user-select: auto;">Payment</h4>
+      
+                <div class="my-3" style="user-select: auto;">
+                  <div class="form-check" style="user-select: auto;">
+                    <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked="" required="" style="user-select: auto;">
+                    <label class="form-check-label" for="credit" style="user-select: auto;">Credit card</label>
+                  </div>
+                  <div class="form-check" style="user-select: auto;">
+                    <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required="" style="user-select: auto;">
+                    <label class="form-check-label" for="debit" style="user-select: auto;">Debit card</label>
+                  </div>
+                  <div class="form-check" style="user-select: auto;">
+                    <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required="" style="user-select: auto;">
+                    <label class="form-check-label" for="paypal" style="user-select: auto;">PayPal</label>
+                  </div>
+                </div>
+      
+                <div class="row gy-3" style="user-select: auto;">
+                  <div class="col-md-6" style="user-select: auto;">
+                    <label for="cc-name" class="form-label" style="user-select: auto;">Name on card</label>
+                    <input type="text" class="form-control" id="cc-name" placeholder="" required="" style="user-select: auto;">
+                    <small class="text-muted" style="user-select: auto;">Full name as displayed on card</small>
+                    <div class="invalid-feedback" style="user-select: auto;">
+                      Name on card is required
+                    </div>
+                  </div>
+      
+                  <div class="col-md-6" style="user-select: auto;">
+                    <label for="cc-number" class="form-label" style="user-select: auto;">Credit card number</label>
+                    <input type="text" class="form-control" id="cc-number" placeholder="" required="" style="user-select: auto;">
+                    <div class="invalid-feedback" style="user-select: auto;">
+                      Credit card number is required
+                    </div>
+                  </div>
+      
+                  <div class="col-md-3" style="user-select: auto;">
+                    <label for="cc-expiration" class="form-label" style="user-select: auto;">Expiration</label>
+                    <input type="text" class="form-control" id="cc-expiration" placeholder="" required="" style="user-select: auto;">
+                    <div class="invalid-feedback" style="user-select: auto;">
+                      Expiration date required
+                    </div>
+                  </div>
+      
+                  <div class="col-md-3" style="user-select: auto;">
+                    <label for="cc-cvv" class="form-label" style="user-select: auto;">CVV</label>
+                    <input type="text" class="form-control" id="cc-cvv" placeholder="" required="" style="user-select: auto;">
+                    <div class="invalid-feedback" style="user-select: auto;">
+                      Security code required
+                    </div>
+                  </div>
+                </div>
+      
+                <hr class="my-4" style="user-select: auto;">
+      
+                <button class="w-100 btn btn-primary btn-lg" type="submit" style="user-select: auto;"> Pay Now</button>
+              </form>
+            </div>
+          </div>
+        </main>
+      
+        
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="mt-5 py-5">
+        <div class="row container mx-auto pt-5">
+            <div class="footer-one col-lg-3 col-md-6 col-12">
+                <img src="./img/logo2.png" alt="">
+                 <p>This is an example of ecommerce Korean Drama  selling website made by using html, css, and Javascript. Rymo is a ecommerce website which sells drama at low cost in INR which is affordable by everyone .Rymo gives drama access to its user by the means of mail.
+                
+                </p>
+
+            </div>
+            <div class="footer-one col-lg-3 col-md-6 col-12 mb-3">
+                <h5 class="pb-2">Featured</h5>
+                <ul class="text-uppercase list-unstyled">
+                    <li><a href="shop4.html">Action</a></li>
+                    <li><a href="shop3.html">Adventture</a></li>
+                    <li><a href="shop4.html">Romantic</a></li>
+                    <li><a href="shop5.html">Suspense</a></li>
+                    <li><a href="shop3.html">horror</a></li>
+                    <li><a href="shop4.html">Thrillers</a></li>
+                    <li><a href="shop5.html">Sci-fi</a></li>
+
+                </ul>
+            </div>
+            <div class="footer-one col-lg-3 col-md-6 col-12 mb-3">
+                <h5 class="pb-2 ">Contact Us</h5>
+                <div>
+                    <h6 class="text-uppercase">address</h6>
+                    <p>123 STREET NAME, CITY, INDIA </p>
+                </div>
+                <div>
+                    <h6 class="text-uppercase">Phone</h6>
+                    <p> +91-1111111111 </p>
+                </div>
+                <div>
+                    <h6 class="text-uppercase">Email</h6>
+                    <p>palsush254@gmail.com</p>
+                </div>
+            </div>
+
+            <div class="footer-one col-lg-3 col-md-6 col-12">
+                <h5 class="pb-2">Brands</h5>
+                <div class="row">
+                    <img class="img-fluid w-25 h-100 m-2" src="./img/bd1.jpg" alt="">
+                    <img class="img-fluid w-25 h-100 m-2" src="./img/bd2.jpg" alt="">
+                    <img class="img-fluid w-25 h-100 m-2" src="./img/bd3.jpg" alt="">
+                    <img class="img-fluid w-25 h-100 m-2" src="./img/bd4.jpg" alt="">
+                    <img class="img-fluid w-25 h-100 m-2" src="./img/bd5.jpg" alt="">
+                    <img class="img-fluid w-25 h-100 m-2" src="./img/bd6.jpg" alt="">
+
+
+
+
+                </div>
+            </div>
+        </div>
+        <div class="copyright mt-5">
+            <div class="row container mx-auto">
+                <div class="col-lg-3 col-md-6 col-12 mb-4">
+                    <img src="./img/payment.png">
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 texr-nowrap mb-2">
+                    <p>Sushant Pal © 2021 . All rights Reserved </p>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12">
+                    <a href="https://www.facebook.com/sushantpal.pal.712/"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/Sushant73657844?t=iP4S4uiTejgsaCVSR7CMTA&s=08"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/sushant-pal-553a63192/"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.instagram.com/sushantpal4_90/?hl=en"><i class="fab fa-instagram"></i></a>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+(function () {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  var forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.prototype.slice.call(forms)
+    .forEach(function (form) {
+      form.addEventListener('submit', function (event) {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
+
+        form.classList.add('was-validated')
+      }, false)
+    })
+})()
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
+

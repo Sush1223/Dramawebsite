@@ -1,0 +1,310 @@
+<html lang="en">
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Website</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="style456.css">
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <style>
+        .small-img-group {
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+
+        .small-img-col {
+            flex-basis: 24%;
+            cursor: pointer;
+        }
+
+        .sproduct select {
+            display: block;
+            padding: 5px 10px;
+
+        }
+
+        .sproduct input {
+            width: 50px;
+            height: 40px;
+            padding-left: 10px;
+            font-size: 16px;
+            margin-right: 10px;
+
+        }
+
+        .sproduct input:focus {
+            outline: none;
+        }
+
+        .buy-btn {
+            background: cornflowerblue;
+            opacity: 1;
+            transition: 0.3s ease;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-3 fixed-top">
+        <div class="container">
+            <img src="./img/logo1.png" alt="">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span><i id="bar" class="fas fa-bars"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link " href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="shop3.html">Drama</a>
+                    </li>
+                    <li class="nav-item">
+                       <a class="nav-link" href="login.html">Account</a>
+                    </li>
+                    <li class="nav-item">
+                       <a class="nav-link" href="about.html">About</a>
+                    </li>
+
+                    <li class="nav-item">
+
+                        <i class="fal fa-shopping-bag"></i>
+
+                    </li>
+
+
+
+
+
+            </div>
+        </div>
+    </nav>
+
+    <section class=" container sproduct my-5 pt-5 ">
+        <div class="row mt-5">
+            <div class="col-lg-5 col-md-12 col-12">
+                <img class="img-fluid w-100 pb-1" src="./img/m.jpg" id="MainImg" alt="">
+                <div class="small-img-group">
+                    <div class="small-img-col">
+
+                    </div>
+                    <div class="small-img-col">
+
+                    </div>
+                    <div class="small-img-col">
+
+                    </div>
+                    <div class="small-img-col">
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-6 col-md-12 col-12">
+                <h6>Home / Drama</h6>
+                <h3 class="py-1">Mouse</h3>
+                <h2>Rs92.00</h2>
+                <!---<select class="my-1">
+                    <option>Select Quality</option>
+                    <option>HD</option>
+                    <option>Ultra-HD</option>
+                    <option>4k</option>
+                    <option>5k</option>
+                </select>--->
+
+                <button onclick="window.location.href='cart19.html';" class="buy-btn">Add To Cart</button>
+                <h4 class="my-1">Plot Summary</h4>
+                <p>StoryLine<br>Working as a member of the regional investigation unit of the Seoul Metropolitan Police
+                    Agency, Detective Lee Hwa Sun’s (Kim Ok Bin) life has never been easy. A widow, whose husband was
+                    brutally murdered, Hwa Sun has dedicated her life to helping others, despite the fact that the
+                    mystery behind her own husband's death remains unsolved. Trying her best to move forward, Hwa Sun’s
+                    life is turned upside down the day she receives a phone call from her husband’s killer.
+
+
+
+                    Following the murderer’s lead, Hwa Sun travels to Mujishi in search of answers but what she finds is
+                    a scene beyond all human comprehension. Situated on the edge of a deep sinkhole, the entire city is
+                    dark.
+
+
+
+
+
+                    <br>
+                    <span class="font-weight-bold"> Cast :</span>
+                    LEE JOON HYUK, KIM OK BIN
+                    <br><span class="font-weight-bold">Language :</span> Korean (Eng-sub)<br><span class="font-weight-bold">Episodes : </span>1-21 
+
+                </p>
+
+
+            </div>
+        </div>
+    </section>
+
+    <section id="T-dramas" class="my-5">
+        <div class="container text-center mt-5 py-5">
+            <h3>Related K-Dramas</h3>
+            <hr class="mx-auto">
+            <p>Here you can see Thriller K-Dramas</p>
+        </div>
+        <div class="row mx-auto container-fluid">
+            <div onclick="window.location.href='p.html';" class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="./img/T11.jpg" alt="">
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h5 class="p-name">Penthouse</h5>
+                <h4 class="p-price">Rs92.00</h4>
+                <button onclick="window.location.href='p.html';"  class="buy-btn">Buy Now</button>
+            </div>
+            <div onclick="window.location.href='drs.html';" class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="img/T22.jpg" alt="">
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h5 class="p-name">Dr Stranger</h5>
+                <h4 class="p-price">Rs92.00</h4>
+                <button onclick="window.location.href='drs.html';" class="buy-btn">Buy Now</button>
+            </div>
+            <div onclick="window.location.href='jrs.html';" class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="./img/T33.jpg" alt="">
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h5 class="p-name">Jiriasan</h5>
+                <h4 class="p-price">Rs92.00</h4>
+                <button onclick="window.location.href='jrs.html';" class="buy-btn">Buy Now</button>
+            </div>
+            <div onclick="window.location.href='m.html';" class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="img/T44.jpg" alt="">
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h5 class="p-name">Mouse</h5>
+                <h4 class="p-price">Rs92.00</h4>
+                <button onclick="window.location.href='m.html';" class="buy-btn">Buy Now</button>
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+
+    <footer class="mt-5 py-5">
+        <div class="row container mx-auto pt-5">
+            <div class="footer-one col-lg-3 col-md-6 col-12">
+                <img src="./img/logo2.png" alt="">
+                 <p>This is an example of ecommerce Korean Drama  selling website made by using html, css, and Javascript. Rymo is a ecommerce website which sells drama at low cost in INR which is affordable by everyone .Rymo gives drama access to its user by the means of mail.
+                
+                </p>
+
+            </div>
+            <div class="footer-one col-lg-3 col-md-6 col-12 mb-3">
+                <h5 class="pb-2">Featured</h5>
+                <ul class="text-uppercase list-unstyled">
+                    <li><a href="shop4.html">Action</a></li>
+                    <li><a href="shop3.html">Adventture</a></li>
+                    <li><a href="shop4.html">Romantic</a></li>
+                    <li><a href="shop5.html">Suspense</a></li>
+                    <li><a href="shop3.html">horror</a></li>
+                    <li><a href="shop4.html">Thrillers</a></li>
+                    <li><a href="shop5.html">Sci-fi</a></li>
+
+                </ul>
+            </div>
+            <div class="footer-one col-lg-3 col-md-6 col-12 mb-3">
+                <h5 class="pb-2 ">Contact Us</h5>
+                <div>
+                    <h6 class="text-uppercase">address</h6>
+                    <p>123 STREET NAME, CITY, INDIA </p>
+                </div>
+                <div>
+                    <h6 class="text-uppercase">Phone</h6>
+                    <p> +91-1111111111 </p>
+                </div>
+                <div>
+                    <h6 class="text-uppercase">Email</h6>
+                    <p>palsush254@gmail.com</p>
+                </div>
+            </div>
+
+            <div class="footer-one col-lg-3 col-md-6 col-12">
+                <h5 class="pb-2">Brands</h5>
+                <div class="row">
+                    <img class="img-fluid w-25 h-100 m-2" src="./img/bd1.jpg" alt="">
+                    <img class="img-fluid w-25 h-100 m-2" src="./img/bd2.jpg" alt="">
+                    <img class="img-fluid w-25 h-100 m-2" src="./img/bd3.jpg" alt="">
+                    <img class="img-fluid w-25 h-100 m-2" src="./img/bd4.jpg" alt="">
+                    <img class="img-fluid w-25 h-100 m-2" src="./img/bd5.jpg" alt="">
+                    <img class="img-fluid w-25 h-100 m-2" src="./img/bd6.jpg" alt="">
+
+
+                </div>
+            </div>
+        </div>
+        <div class="copyright mt-5">
+            <div class="row container mx-auto">
+                <div class="col-lg-3 col-md-6 col-12 mb-4">
+                    <img src="./img/payment.png">
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 texr-nowrap mb-2">
+                    <p>Sushant Pal © 2021 . All rights Reserved </p>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12">
+                    <a href="https://www.facebook.com/sushantpal.pal.712/"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/Sushant73657844?t=iP4S4uiTejgsaCVSR7CMTA&s=08"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/sushant-pal-553a63192/"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.instagram.com/sushantpal4_90/?hl=en"><i class="fab fa-instagram"></i></a>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
