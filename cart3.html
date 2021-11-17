@@ -79,7 +79,7 @@
                 <span class="cart-price cart-column">Rs92.00</span>
                 <div class="cart-quantity cart-column">
                    <!-- <input class="cart-quantity-input " type="number" value="1">--->
-                    <button class="btn btn-danger " type="button">REMOVE</button>
+                    <button onclick="window.location.href='index.html';"   class="btn btn-danger " type="button">REMOVE</button>
                 </div>
             </div>
 
@@ -165,61 +165,38 @@
 
     <script>
         if (document.readyState == 'loading') {
-    document.addEventListener('DOMContentLoaded', ready)
-} else {
-    ready()
-}
+            document.addEventListener('DOMContentLoaded', ready)
+        } else {
+            ready()
+        }
 
-function ready() {
-    var removeCartItemButtons = document.getElementsByClassName('btn-danger')
-    for (var i = 0; i < removeCartItemButtons.length; i++) {
-        var button = removeCartItemButtons[i]
-        button.addEventListener('click', removeCartItem)
-    }
-
-    
-
-    
-
-    document.getElementsByClassName('btn-purchase')[0].addEventListener('click', purchaseClicked)
-}
-
-function purchaseClicked() {
-    alert('Proceeding to Next page to Checkout Your Item')
-    var cartItems = document.getElementsByClassName('cart-items')[0]
-    while (cartItems.hasChildNodes()) {
-        cartItems.removeChild(cartItems.firstChild)
-    }
-    updateCartTotal()
-}
+        function ready() {
+            var removeCartItemButtons = document.getElementsByClassName('btn-danger')
+            for (var i = 0; i < removeCartItemButtons.length; i++) {
+                var button = removeCartItemButtons[i]
+                button.addEventListener('click', removeCartItem)
+            }
 
 
-function removeCartItem(event) {
-    var buttonClicked = event.target
-    buttonClicked.parentElement.parentElement.remove()
-    updateCartTotal()
-}
+            document.getElementsByClassName('btn-purchase')[0].addEventListener('click', purchaseClicked)
+        }
+
+        function purchaseClicked() {
+            alert('Proceeding to Next page to Checkout Your Item')
+
+
+        }
+
+
+
+        function removeCartItem(event) {
+            alert("Are you sure you want to remove the item from the cart.You will be redirected to home page")
+
+        }
 
 
 
 
-
-
-function updateCartTotal() {
-    var cartItemContainer = document.getElementsByClassName('cart-items')[0]
-    var cartRows = cartItemContainer.getElementsByClassName('cart-row')
-    var total = 0
-    for (var i = 0; i < cartRows.length; i++) {
-        var cartRow = cartRows[i]
-        var priceElement = cartRow.getElementsByClassName('cart-price')[0]
-        var quantityElement = cartRow.getElementsByClassName('cart-quantity-input')[0]
-        var price = parseFloat(priceElement.innerText.replace('Rs', ''))
-        var quantity = quantityElement.value
-        total = total + (price * quantity)
-    }
-    total = Math.round(total * 100) / 100
-    document.getElementsByClassName('cart-total-price')[0].innerText = 'Rs' + total
-}
     </script>
 
 
