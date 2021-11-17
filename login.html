@@ -14,22 +14,21 @@
 
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-        <link rel="stylesheet" href="style456.css">
+    <link rel="stylesheet" href="style456.css">
 
 
     <style>
-        .login-box{
+        .login-box {
             background-color: #eee;
             border-radius: 20px;
             padding: 32px;
         }
 
-        body{
+        body {
             background-image: url(./img/backk2.jpg);
             background-attachment: fixed;
             background-repeat: no-repeat;
         }
-       
     </style>
 </head>
 
@@ -38,15 +37,17 @@
 
     <div class="container my-5">
 
-        <div><a href="index.html"><h1 class="text-center">rymo</h1></a></div>
+        <div><a href="index.html">
+                <h1 class="text-center">rymo</h1>
+            </a></div>
         <div class="d-flex justify-content-center mt-5">
-           
-            <div class="login-box m-auto  col-4 col-lg-3 col-md-6 col-12">
+
+            <div class="login-box m-auto  col-lg-4 col-md-12 col-12 ">
                 <h3 class="text-center">Login</h3>
-                <form  action="">
-                    <input type="email" class="form-control m-2" placeholder="Email" required="">
-                    <input type="password" class="form-control m-2" placeholder="password" required="" minlength="6">
-                    <input  onclick="window.location.href='index.html';" type="submit" class="form-control m-2 btn-success" value="Login" required=""> 
+                <form action="">
+                    <input type="text" id="email" class="form-control m-2" placeholder="Email">
+                    <input type="text" id="password" class="form-control m-2" placeholder="password">
+                    <input   type="button" id="submit" class="form-control m-2 btn-success" value="Login">
                 </form>
                 <a href="signup.html">Dont have an account? Create One</a>
             </div>
@@ -54,10 +55,44 @@
     </div>
 
 
-   
-    
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js"
+        integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A=="
+        crossorigin="anonymous"></script>
+
+    <script>
+
+        // for validity
+        $("#submit").click(function () {
+            var email = $("#email").val();
+            var password = $("#password").val();
+            if (email == '' || password == '') {
+
+                swal({
+                    title: "Fields are missing!",
+                    text: "Please fill all the fields!",
+                    icon: "warning",
+                    button: "OK",
+                });
+
+            }
+            else{
+                swal({
+                    title: "login information",
+                    text: "Successfully logged in",
+                    icon: "success",
+                    button: "OK",
+                });
+            }
+
+        })
+    </script>
+
+
+
+
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
         integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
         crossorigin="anonymous"></script>

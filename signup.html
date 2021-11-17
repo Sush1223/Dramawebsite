@@ -40,14 +40,14 @@
         <div><a href="index.html"><h1 class="text-center">rymo</h1></a></div>
         <div class="d-flex justify-content-center mt-5">
            
-            <div class="login-box m-auto  col-12 col-lg-3 col-md-6 col-12">
+            <div class="login-box m-auto  col-lg-4 col-md-12 col-12 ">
                 <h2 class="text-center">Sign up </h2>
-                <form action="">
-                    <input type="text" class="form-control m-2" placeholder="Full Name" required="">
-                    <input type="email" class="form-control m-2"placeholder="Email" required="">
-                    <input type="password" class="form-control m-2" placeholder="password" required="" minlength="6">
-                    <input type="password" class="form-control m-2" placeholder=" Confirm password" required="">
-                    <input onclick="window.location.href='index.html';" type="submit" class="form-control m-2 btn-success" value="Create account" required=""> 
+                <form action="index.html" method="GET">
+                    <input type="text" id="fullname" class="form-control m-2" placeholder="Full Name">
+                    <input type="text" id="email" class="form-control m-2"placeholder="Email" >
+                    <input type="text" id="password" class="form-control m-2" placeholder="password" >
+                    <input type="password" id="Confirm" class="form-control m-2" placeholder=" Confirm password" >
+                    <input type="button" id ="submit" class="form-control m-2 btn-success" value="Create account" > 
                 </form>
 
                 <a href="login.html">Already have an account? Login Here</a>
@@ -55,6 +55,42 @@
         </div>
     </div>
 
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js"
+        integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A=="
+        crossorigin="anonymous"></script>
+
+
+        <script>
+
+            // for validity
+            $("#submit").click(function () {
+                var email = $("#email").val();
+                var password = $("#password").val();
+                var confirmpass = $("#confirm").val();
+                var fullna = $("#fullname")
+                if (email == '' || password == '' || confirmpass =='' || fullna == '') {
+    
+                    swal({
+                        title: "Fields are missing!",
+                        text: "Please fill all the fields!",
+                        icon: "warning",
+                        button: "OK",
+                    });
+    
+                }
+                else{
+                    swal({
+                        title: "Account informaton",
+                        text: " Account Successfully Created",
+                        icon: "success",
+                        button: "OK",
+                    });
+                }
+    
+            })
+        </script>
 
     
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
